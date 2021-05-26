@@ -1,8 +1,11 @@
-const compute = () => {
+const compute = (e) => {
+    e.preventDefault();
+
     const p = document.getElementById("principal").value;
     const r = document.getElementById('rate').value;
     const t = document.getElementById('years').value;
     const result = document.getElementById('result');
+
 
     //Reset results paragraph to empty string
     result.innerHTML = '';
