@@ -1,12 +1,15 @@
-const compute = (e) => {
-    e.preventDefault();
+const compute = () => {
 
-    const p = document.getElementById("principal").value;
+    const p = document.getElementById('principal').value;
     const r = document.getElementById('rate').value;
     const t = document.getElementById('years').value;
     const result = document.getElementById('result');
 
-
+    if (+p <= 0) {
+        alert('Please enter a positive number.');
+        document.getElementById('principal').focus();
+        return;
+    }
     //Reset results paragraph to empty string
     result.innerHTML = '';
 
