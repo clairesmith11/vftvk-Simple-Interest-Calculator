@@ -18,7 +18,7 @@ const compute = () => {
     const markup = `
         <div>
             <p>If you deposit <span class="yellow">${p}</span>,</p>
-            <p>at an interest rate of <span class="yellow">${r}</span>.</p>
+            <p>at an interest rate of <span class="yellow">${r}</span>%.</p>
             <p>You will receive an amount of <span class="yellow">${calc}</span>,</p>
             <p>in the year <span class="yellow">${year}</span>.</p>
         </div>
